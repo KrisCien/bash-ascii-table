@@ -1,0 +1,29 @@
+= bash-ascii-table
+
+Display tabular data in ascii table works with bash 3.2 or later
+
+== Usage
+Copy function print_table into your script, profit.
+
+Example:
+
+ print_table ";"      \
+  "h0*;h1;h2"         \
+  "g0;[0, 1];[0, 2]"  \
+  "g0;[1, 1];[1, 2]"  \
+  "g1;[2, 1];[2, 2]"  \
+  "g1;[2, 1];[2, 2]"  \
+  "g1;[3, 1];[3, 2]"
+
+Will print this table:
+
+ | h0 | h1     | h2     |
+ |----+--------+--------|
+ | g0 | [0, 1] | [0, 2] |
+ |    | [1, 1] | [1, 2] |
+ |----+--------+--------|
+ | g1 | [2, 1] | [2, 2] |
+ |    | [2, 1] | [2, 2] |
+ |    | [3, 1] | [3, 2] |
+
+See: demo.sh for more usage examples.
