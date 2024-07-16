@@ -2,8 +2,9 @@
 # args: filed_separator, header, row_0, row_1 .. row_N
 # header and each row is single string of fields separted by filed separator
 # provided as first argument
-# fields can use ANSI escape code get colour output format see: https://en.wikipedia.org/wiki/ANSI_escape_code
-# e.g. ot get green text set value: \e[38;5;76mGREEN TEXT\e[0m
+# fields can use ANSI escape code get colour output 
+# see: https://en.wikipedia.org/wiki/ANSI_escape_code
+# e.g. to get green text set value: \e[38;5;76mGREEN TEXT\e[0m
 # header fields can have formatting options
 #  * : group by column (note data MUST be odered by that column)
 #  < : left align (default)
